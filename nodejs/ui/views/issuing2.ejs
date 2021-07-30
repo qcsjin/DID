@@ -1,0 +1,22 @@
+<div id="issuing2" class="tab" style="display:none;">
+
+     <div class="w3-container w3-card w3-padding w3-margin" style="float: left;width: 31%">
+            <h3>创建凭证定义</h3>
+            <form method="POST" action="/api/issuer/create_cred_def">
+                <label>选择凭证模板:</label>
+                <select class="w3-select" name="schema_id" required>
+                    <%for(let schema of schemas) {%>
+                    <option value="<%=schema.id%>"><%=schema.name%> <%=schema.version%></option>
+                    <%}%>
+                </select>
+                <br><br>
+                <label>凭证标签:</label>
+                <input class="w3-input" type="text" name="tag" value="My medical record" required>
+                <br><br>
+                <input class="w3-btn w3-white w3-border" type="submit">
+            </form>
+        
+    </div>
+    <br><br><br><br<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div>

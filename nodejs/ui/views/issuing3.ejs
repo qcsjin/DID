@@ -1,0 +1,24 @@
+<div id="issuing3" class="tab" style="display:none;">
+    
+        <div class="w3-container w3-card w3-padding w3-margin" style="float: left;width: 31%">
+            <h3>发布凭证</h3>
+            <form method="POST" action="/api/issuer/send_credential_offer">
+                <label>选择发布对象: </label>
+                <select class="w3-select" name="their_relationship_did" required>
+                    <%for(let relationship of relationships) {%>
+                        <option value="<%=relationship.their_did%>"><%=relationship.metadata.name%></option>
+                    <%}%>
+                </select>
+                <br><br>
+                <label>选择凭证:</label>
+                <select class="w3-select" name="cred_def_id" required>
+                    <%for(let credDef of credentialDefinitions) {%>
+                        <option value="<%=credDef.id%>"><%=credDef.tag%></option>
+                    <%}%>
+                </select>
+                <br><br>
+                <input class="w3-btn w3-white w3-border" type="submit">
+            </form>
+        </div>
+<br><br><br><br<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>

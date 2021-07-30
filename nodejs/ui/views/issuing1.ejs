@@ -1,0 +1,22 @@
+<div id="issuing1" class="tab" style="display:none;">
+    <div class="w3-container w3-card w3-padding w3-margin" style="float: left;width: 31%">
+        <h3>创建凭证模板: </h3>
+        <form method="POST" action="/api/issuer/create_schema">
+            <label>凭证模板名称: </label>
+            <input type="text" class="w3-input" name="name_of_schema" value="">
+            <br><br>
+            <label>凭证版本号: </label>
+            <input type="text" class="w3-input" name="version" value="1.0">
+            <br><br>
+            <label>请提供凭证所含属性:</label><br><br>
+            <textarea style="height:120px;" class="w3-input" name="attributes" required>
+   
+</textarea>
+            <input class="w3-btn w3-white w3-border" type="submit">
+            
+        </form>
+</div>
+ <br><br><br><br><br>
+</div>
+
+
